@@ -1,0 +1,150 @@
+/* ================================================================
+   CONTACT PAGE STYLES
+   ================================================================ */
+
+.contact-intro {
+  max-width: var(--container-narrow);
+}
+
+.contact-intro p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+/* ── Contact Info Cards ────────────────────────────────────── */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.contact-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2xl);
+  text-align: center;
+  transition: all var(--duration-normal) var(--ease-smooth);
+  position: relative;
+}
+
+.contact-card:hover {
+  border-color: var(--color-border-accent);
+  background: var(--color-bg-card-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.contact-card__icon {
+  font-size: 1.8rem;
+  margin-bottom: var(--space-lg);
+  display: block;
+}
+
+.contact-card__label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.contact-card__value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+/* ── Scope Section ─────────────────────────────────────────── */
+.scope-section {
+  background: var(--color-bg-secondary);
+}
+
+.scope-list {
+  margin-top: var(--space-xl);
+}
+
+.scope-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  transition: all var(--duration-fast) var(--ease-smooth);
+}
+
+.scope-item:last-child {
+  border-bottom: none;
+}
+
+.scope-item:hover {
+  padding-left: var(--space-xl);
+  color: var(--color-text-primary);
+}
+
+.scope-item__check {
+  color: var(--color-accent);
+  font-weight: 600;
+  min-width: 20px;
+}
+
+.scope-item--excluded {
+  opacity: 0.5;
+}
+
+.scope-item--excluded .scope-item__check {
+  color: var(--color-text-muted);
+}
+
+/* ── Policy blocks ─────────────────────────────────────────── */
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.policy-block {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2xl);
+  transition: all var(--duration-normal) var(--ease-smooth);
+}
+
+.policy-block:hover {
+  border-color: var(--color-border-accent);
+}
+
+.policy-block__title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.policy-block__text {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+/* ── Disclaimer ────────────────────────────────────────────── */
+.disclaimer-section {
+  text-align: center;
+}
+
+.disclaimer-text {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}

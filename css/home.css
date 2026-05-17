@@ -1,0 +1,167 @@
+/* ================================================================
+   HOME PAGE STYLES
+   ================================================================ */
+
+/* ── Research Areas Grid ───────────────────────────────────── */
+.research-areas {
+  background: var(--color-bg-secondary);
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.area-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all var(--duration-normal) var(--ease-smooth);
+}
+
+.area-item:hover {
+  border-color: var(--color-border-accent);
+  background: var(--color-bg-card-hover);
+  transform: translateX(4px);
+}
+
+.area-item__number {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  opacity: 0.4;
+  line-height: 1;
+  min-width: 30px;
+}
+
+.area-item__text {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* ── Contributions ─────────────────────────────────────────── */
+.contributions {
+  position: relative;
+}
+
+.contributions__highlight {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  padding: var(--space-2xl) var(--space-2xl) var(--space-2xl) var(--space-2xl);
+  margin-top: var(--space-2xl);
+}
+
+.contributions__highlight p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.contributions__cta {
+  margin-top: var(--space-xl);
+}
+
+/* ── Approach / Principles ─────────────────────────────────── */
+.approach {
+  background: var(--color-bg-secondary);
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.principle {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all var(--duration-normal) var(--ease-smooth);
+}
+
+.principle:hover {
+  border-color: var(--color-border-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.principle__icon {
+  font-size: 1.8rem;
+  margin-bottom: var(--space-lg);
+  display: block;
+}
+
+.principle__title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.principle__line {
+  width: 24px;
+  height: 1px;
+  background: var(--color-accent);
+  margin: var(--space-md) auto;
+  opacity: 0.5;
+}
+
+.principle__desc {
+  font-size: 0.825rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* ── Contact CTA section ───────────────────────────────────── */
+.contact-cta {
+  text-align: center;
+}
+
+.contact-cta__links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+  flex-wrap: wrap;
+}
+
+.contact-cta__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.contact-cta__item span {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+}
