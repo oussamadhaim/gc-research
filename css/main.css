@@ -337,15 +337,16 @@ p:last-child {
 /* ── Hero ──────────────────────────────────────────────────── */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
   background: var(--color-bg-primary);
+  padding-top: 180px;
 }
 
 .hero--small {
-  min-height: 55vh;
+  min-height: 50vh;
 }
 
 .hero__bg {
@@ -389,7 +390,7 @@ p:last-child {
   max-width: var(--container-narrow);
   margin: 0 auto;
   padding: 0 var(--space-xl);
-  padding-top: var(--space-5xl);
+  padding-top: 0;
 }
 
 .hero__label {
@@ -754,11 +755,13 @@ p:last-child {
   }
 
   .hero {
-    min-height: 85vh;
+    min-height: 75vh;
+    align-items: flex-start;
+    padding-top: 140px;
   }
 
   .hero--small {
-    min-height: 45vh;
+    min-height: 40vh;
   }
 
   .section {
