@@ -101,3 +101,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Home Hero Background Image ───────────────────────────── */
+.hero__bg {
+  background: url('/hero-bg.jpg') center top / cover no-repeat;
+}
