@@ -386,7 +386,7 @@ p:last-child {
 .hero__content {
   position: relative;
   z-index: 2;
-  max-width: var(--container-max);
+  max-width: var(--container-narrow);
   margin: 0 auto;
   padding: 0 var(--space-xl);
   padding-top: var(--space-5xl);
@@ -415,7 +415,7 @@ p:last-child {
 .hero__title {
   margin-bottom: var(--space-xl);
   max-width: 1200px;
-  font-size: clamp(1.8rem, 4vw, 3.5rem) !important;
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem) !important;
 }
 
 .hero__description {
