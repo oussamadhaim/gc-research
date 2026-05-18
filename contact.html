@@ -19,8 +19,10 @@
       </a>
       <div class="navbar__links" id="navLinks">
         <a href="/" class="navbar__link">Home</a>
+        <a href="/method.html" class="navbar__link">Method</a>
         <a href="/research.html" class="navbar__link">Research</a>
-        <a href="/publications.html" class="navbar__link">Publications</a>
+        <a href="/applications.html" class="navbar__link">Applications</a>
+        <a href="/academic-use.html" class="navbar__link">Academic Use</a>
         <a href="/contact.html" class="navbar__link active">Contact</a>
       </div>
       <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
@@ -31,25 +33,31 @@
     </div>
   </nav>
 
-  <!-- ═══ HERO ═══ -->
-  <section class="hero hero--small" id="hero">
+  <!-- ═══ SECTION 1 — OPENING (HERO) ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
     <canvas class="hero__canvas"></canvas>
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <span class="hero__label">Get in Touch</span>
-      <h1 class="hero__title">Contact</h1>
+      <h1 class="hero__title" style="font-size: clamp(2.2rem, 5vw, 4.5rem);">Contact</h1>
+      <div class="section-divider"></div>
+      <p class="hero__description">
+        For professional inquiries, methodological discussions, research-related matters, and collaborations concerning mathematical and statistical analysis applied to financial markets.
+      </p>
     </div>
   </section>
 
-  <!-- ═══ CONTACT INFO ═══ -->
-  <section class="section" id="contact-info">
-    <div class="container">
+  <!-- ═══ SECTION 2 — CONTACT INFORMATION ═══ -->
+  <section class="section bg-primary" id="contact-info">
+    <div class="container container--narrow">
       <div class="contact-intro reveal">
-        <span class="section-label">Inquiries</span>
-        <h2 class="section-title">Academic and Professional Inquiries</h2>
-        <p>
-          For academic inquiries, research collaborations, or professional matters related to financial
-          market analysis, you may contact me via email.
+        <span class="section-label">Information</span>
+        <h2 class="section-title">Professional Contact</h2>
+        <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: var(--space-md);">
+          Contact is available for matters related to financial market analysis, methodological research, strategic frameworks, mathematical and statistical models, and professional collaboration.
+        </p>
+        <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: var(--space-2xl);">
+          Messages should be relevant to the areas of expertise presented on this website and clearly indicate the purpose of the inquiry.
         </p>
       </div>
 
@@ -57,67 +65,90 @@
         <div class="contact-card reveal reveal-delay-1">
           <span class="contact-card__icon">✉</span>
           <span class="contact-card__label">Email</span>
-          <a href="mailto:your@email.com" class="contact-card__value">your@email.com</a>
+          <a href="#" class="contact-card__value">[Professional email to be added]</a>
         </div>
         <div class="contact-card reveal reveal-delay-2">
           <span class="contact-card__icon">in</span>
           <span class="contact-card__label">LinkedIn</span>
-          <a href="#" class="contact-card__value">LinkedIn Profile</a>
+          <a href="#" class="contact-card__value" target="_blank">[LinkedIn profile to be added]</a>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="container"><div class="separator"></div></div>
-
-  <!-- ═══ SCOPE OF CONTACT ═══ -->
-  <section class="section scope-section" id="scope">
-    <div class="container">
+  <!-- ═══ SECTION 3 — SCOPE OF CONTACT ═══ -->
+  <section class="section bg-secondary scope-section" id="scope">
+    <div class="container container--narrow">
       <div class="reveal">
         <span class="section-label">Guidelines</span>
         <h2 class="section-title">Scope of Contact</h2>
-        <p class="section-subtitle">Please note that communications are limited to:</p>
+        <p class="section-subtitle" style="margin-bottom: var(--space-xl);">Communications are limited to professional, methodological, research-related, and academic matters connected to financial market analysis.</p>
       </div>
 
-      <div class="scope-list reveal">
-        <div class="scope-item">
-          <span class="scope-item__check">✓</span>
-          Academic discussions
+      <div class="scope-grid reveal">
+        <div class="scope-box">
+          <h3 class="scope-box__title">Professional Inquiries</h3>
+          <p class="scope-box__text">Discussions related to financial markets, trading methodologies, strategic structures, analytical models, and professional applications.</p>
         </div>
-        <div class="scope-item">
-          <span class="scope-item__check">✓</span>
-          Research-related inquiries
+        <div class="scope-box">
+          <h3 class="scope-box__title">Research-Related Matters</h3>
+          <p class="scope-box__text">Inquiries concerning mathematical and statistical analysis, financial time series, methodological frameworks, and research developments.</p>
         </div>
-        <div class="scope-item">
-          <span class="scope-item__check">✓</span>
-          Professional collaborations
+        <div class="scope-box">
+          <h3 class="scope-box__title">Academic and Educational Contexts</h3>
+          <p class="scope-box__text">Communications related to academic use, master-level contexts, methodological discussion, or educational analysis of the work.</p>
         </div>
-        <div class="scope-item scope-item--excluded">
-          <span class="scope-item__check">✕</span>
-          Trading signals, investment advice, or commercial offers
+        <div class="scope-box">
+          <h3 class="scope-box__title">Collaborations</h3>
+          <p class="scope-box__text">Professional or research-oriented collaborations aligned with the methodological and analytical scope of the work.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ RESPONSE POLICY + DISCLAIMER ═══ -->
-  <section class="section" id="policy">
+  <!-- ═══ SECTION 4 — REQUESTS NOT CONSIDERED ═══ -->
+  <section class="section bg-primary" id="not-considered">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Restrictions</span>
+        <h2 class="section-title">Requests Not Considered</h2>
+      </div>
+      
+      <div class="not-considered-content reveal reveal-delay-1">
+        <p>Requests related to trading signals, investment advice, portfolio management, personal financial decisions, or operational recommendations are not considered.</p>
+        <p>The work described on this website is not intended to provide buy or sell indications, financial advice, investment recommendations, or individualized trading instructions.</p>
+        <p>Messages requesting specific market operations, trading signals, guaranteed results, or personal investment guidance will not receive a response.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTIONS 5, 6, 7 — POLICY, NOTICE, DISCLAIMER ═══ -->
+  <section class="section bg-secondary scope-section" id="policies">
     <div class="container">
       <div class="policy-grid">
-        <div class="policy-block reveal reveal-delay-1">
+        
+        <!-- SECTION 5 -->
+        <div class="policy-block reveal">
           <h3 class="policy-block__title">Response Policy</h3>
-          <p class="policy-block__text">
-            Due to ongoing research activity, responses may require time.
-            Only relevant and well-defined inquiries will receive a reply.
-          </p>
+          <p class="policy-block__text">Due to ongoing professional and research activity, responses may require time.</p>
+          <p class="policy-block__text" style="margin-top: 0.5rem;">Only relevant, clearly defined, and professionally appropriate inquiries will be considered.</p>
+          <p class="policy-block__text" style="margin-top: 0.5rem;">Generic messages, promotional proposals, unrelated commercial offers, or requests outside the scope of the work may not receive a response.</p>
         </div>
+
+        <!-- SECTION 6 -->
+        <div class="policy-block reveal reveal-delay-1">
+          <h3 class="policy-block__title">Professional Notice</h3>
+          <p class="policy-block__text">The contact information provided is intended exclusively for professional, methodological, research-related, and academic communications.</p>
+          <p class="policy-block__text" style="margin-top: 0.5rem;">It should not be used for unsolicited commercial messages, promotional campaigns, or requests unrelated to the areas of activity described on this website.</p>
+        </div>
+
+        <!-- SECTION 7 -->
         <div class="policy-block reveal reveal-delay-2">
           <h3 class="policy-block__title">Disclaimer</h3>
-          <p class="policy-block__text">
-            This website and its contents are intended exclusively for research and educational purposes
-            and do not constitute financial advice.
-          </p>
+          <p class="policy-block__text">The content of this website is intended exclusively for research, analytical, and educational purposes.</p>
+          <p class="policy-block__text" style="margin-top: 0.5rem;">It does not constitute financial advice, investment advice, trading signals, portfolio management guidance, solicitation to invest, or recommendations to buy or sell financial instruments.</p>
         </div>
+        
       </div>
     </div>
   </section>
@@ -135,15 +166,17 @@
         </div>
         <div class="footer__links">
           <a href="/" class="footer__link">Home</a>
+          <a href="/method.html" class="footer__link">Method</a>
           <a href="/research.html" class="footer__link">Research</a>
-          <a href="/publications.html" class="footer__link">Publications</a>
+          <a href="/applications.html" class="footer__link">Applications</a>
+          <a href="/academic-use.html" class="footer__link">Academic Use</a>
           <a href="/contact.html" class="footer__link">Contact</a>
         </div>
       </div>
       <div class="footer__bottom">
         <span class="footer__copyright">© 2026 — All rights reserved</span>
         <span class="footer__disclaimer">
-          This website and its contents are intended exclusively for research and educational purposes and do not constitute financial advice.
+          The content of this website is intended exclusively for research, analytical, and educational purposes. It does not constitute financial advice, investment advice, trading signals, portfolio management guidance, solicitation to invest, or recommendations to buy or sell financial instruments.
         </span>
       </div>
     </div>

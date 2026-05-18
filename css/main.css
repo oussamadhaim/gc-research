@@ -178,6 +178,17 @@ p:last-child {
   padding: var(--space-3xl) 0;
 }
 
+/* Background Utilities */
+.bg-primary {
+  background-color: var(--color-bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
 /* Section headers */
 .section-label {
   font-family: var(--font-body);
@@ -404,7 +415,7 @@ p:last-child {
 
 .hero__title {
   margin-bottom: var(--space-xl);
-  max-width: 800px;
+  max-width: 1050px;
 }
 
 .hero__description {
@@ -657,6 +668,60 @@ p:last-child {
   background: var(--color-border);
 }
 
+/* ── Approach / Principles ─────────────────────────────────── */
+.approach {
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.principle {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all var(--duration-normal) var(--ease-smooth);
+}
+
+.principle:hover {
+  border-color: var(--color-border-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.principle__icon {
+  font-size: 1.8rem;
+  margin-bottom: var(--space-lg);
+  display: block;
+}
+
+.principle__title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.principle__line {
+  width: 24px;
+  height: 1px;
+  background: var(--color-accent);
+  margin: var(--space-md) auto;
+  opacity: 0.5;
+}
+
+.principle__desc {
+  font-size: 0.825rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
 /* ── Responsive ────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .navbar__links {
@@ -718,6 +783,10 @@ p:last-child {
     text-align: center;
     max-width: 100%;
   }
+
+  .principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
@@ -727,5 +796,9 @@ p:last-child {
 
   .hero__description {
     font-size: 1rem;
+  }
+
+  .principles-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -6,8 +6,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        method: resolve(__dirname, 'method.html'),
         research: resolve(__dirname, 'research.html'),
-        publications: resolve(__dirname, 'publications.html'),
+        applications: resolve(__dirname, 'applications.html'),
+        academic_use: resolve(__dirname, 'academic-use.html'),
         contact: resolve(__dirname, 'contact.html'),
       },
     },

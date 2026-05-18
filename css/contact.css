@@ -65,50 +65,66 @@
   background: var(--color-bg-secondary);
 }
 
-.scope-list {
-  margin-top: var(--space-xl);
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
 }
 
-.scope-item {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  padding: var(--space-md) var(--space-lg);
-  border-bottom: 1px solid var(--color-border);
-  color: var(--color-text-secondary);
-  font-size: 0.95rem;
-  transition: all var(--duration-fast) var(--ease-smooth);
+.scope-box {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  transition: border-color var(--duration-fast) var(--ease-smooth);
 }
 
-.scope-item:last-child {
-  border-bottom: none;
+.scope-box:hover {
+  border-color: var(--color-text-secondary);
 }
 
-.scope-item:hover {
-  padding-left: var(--space-xl);
+.scope-box__title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 500;
   color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
 }
 
-.scope-item__check {
-  color: var(--color-accent);
-  font-weight: 600;
-  min-width: 20px;
-}
-
-.scope-item--excluded {
-  opacity: 0.5;
-}
-
-.scope-item--excluded .scope-item__check {
+.scope-box__text {
+  font-size: 0.95rem;
   color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ── Not Considered ────────────────────────────────────────── */
+.not-considered-content {
+  margin-top: var(--space-xl);
+  max-width: 800px;
+}
+
+.not-considered-content p {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+  padding-left: var(--space-lg);
+  border-left: 1px solid var(--color-accent);
 }
 
 /* ── Policy blocks ─────────────────────────────────────────── */
 .policy-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
   margin-top: var(--space-2xl);
+}
+
+@media (max-width: 768px) {
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .policy-block {

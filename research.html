@@ -19,8 +19,10 @@
       </a>
       <div class="navbar__links" id="navLinks">
         <a href="/" class="navbar__link">Home</a>
+        <a href="/method.html" class="navbar__link">Method</a>
         <a href="/research.html" class="navbar__link active">Research</a>
-        <a href="/publications.html" class="navbar__link">Publications</a>
+        <a href="/applications.html" class="navbar__link">Applications</a>
+        <a href="/academic-use.html" class="navbar__link">Academic Use</a>
         <a href="/contact.html" class="navbar__link">Contact</a>
       </div>
       <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
@@ -32,159 +34,293 @@
   </nav>
 
   <!-- ═══ HERO ═══ -->
-  <section class="hero hero--small" id="hero">
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
     <canvas class="hero__canvas"></canvas>
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <h1 class="hero__title">Research and<br>Theoretical Frameworks</h1>
+      <h1 class="hero__title" style="font-size: clamp(2rem, 5vw, 4.5rem);">Research Frameworks for<br>Financial Market Analysis</h1>
+      <div class="section-divider"></div>
+      <p class="hero__description">
+        Theoretical and analytical frameworks developed for the mathematical and statistical interpretation of financial market dynamics, with a focus on structural validity, statistical coherence, reproducibility, and independence from traditional technical indicators.
+      </p>
     </div>
   </section>
 
-  <!-- ═══ OVERVIEW ═══ -->
-  <section class="section" id="overview">
-    <div class="container">
-      <div class="overview-block reveal">
-        <h2 class="section-title">Overview</h2>
-        <p>
-          This section presents the main theoretical structures developed in the context of mathematical and
-          statistical analysis of financial markets.
+  <!-- ═══ RESEARCH OVERVIEW ═══ -->
+  <section class="section bg-primary" id="research-overview">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <h2 class="section-title">Research and Theoretical Frameworks</h2>
+        <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: var(--space-md);">
+          The research activity is focused on the development of analytical frameworks for the interpretation of financial market dynamics through mathematical and statistical principles.
         </p>
-        <p>
-          The work is based on an independent research approach, aimed at identifying structural properties
-          of market dynamics without reliance on traditional technical indicators or oscillatory tools.
+        <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: var(--space-md);">
+          The work aims to identify structural properties within price dynamics and financial time series, without relying on conventional technical indicators, oscillators, transformed signals, or retrospectively optimized parameters.
         </p>
-        <p>
-          The objective is not predictive optimization, but the formulation of coherent analytical frameworks
-          capable of describing market behavior under reproducible conditions.
+        <p style="font-size: 1.05rem; line-height: 1.9;">
+          The objective is not to produce predictive certainty or automatic trading signals, but to formulate coherent analytical structures capable of supporting market interpretation under reproducible methodological conditions.
         </p>
       </div>
     </div>
   </section>
-
-  <div class="container"><div class="separator"></div></div>
 
   <!-- ═══ RESEARCH DIRECTION ═══ -->
-  <section class="section" id="direction">
-    <div class="container">
+  <section class="section bg-secondary" id="research-direction">
+    <div class="container container--narrow">
       <div class="reveal">
-        <h2 class="section-title">Research Direction</h2>
-        <p class="section-subtitle">The research activity is oriented toward:</p>
+        <h2 class="section-title">Main Lines of Research</h2>
+        <p style="margin-bottom: var(--space-xl);">
+          The research is oriented toward the formalization of analytical structures capable of connecting market behavior, mathematical relationships, and statistical consistency.
+        </p>
       </div>
-      <div class="direction-list">
-        <div class="direction-item reveal reveal-delay-1">
-          <span class="direction-item__marker"></span>
-          <span class="direction-item__text">The identification of invariant structures in price dynamics</span>
+      
+      <div class="reveal reveal-delay-1" style="margin-bottom: var(--space-lg);">
+        <h3 style="margin-bottom: var(--space-sm); color: var(--color-accent); font-size: 1.2rem;">Structural Properties of Price Dynamics</h3>
+        <p>
+          The research investigates structural properties within price dynamics, with the objective of identifying analytical conditions that can be studied directly from market data. The focus is placed on the internal configuration of price sequences and on the possibility of defining market structures through reproducible criteria.
+        </p>
+      </div>
+      
+      <div class="reveal reveal-delay-2" style="margin-bottom: var(--space-lg);">
+        <h3 style="margin-bottom: var(--space-sm); color: var(--color-accent); font-size: 1.2rem;">Statistical Characterization of Financial Time Series</h3>
+        <p>
+          Financial time series are studied through statistical criteria related to variability, recurrence, distributional behavior, and the presence of non-random components in price dynamics. The aim is to evaluate whether specific market configurations can be interpreted within statistically coherent frameworks.
+        </p>
+      </div>
+      
+      <div class="reveal reveal-delay-3" style="margin-bottom: var(--space-lg);">
+        <h3 style="margin-bottom: var(--space-sm); color: var(--color-accent); font-size: 1.2rem;">Non-Optimized Analytical Models</h3>
+        <p>
+          The research develops models that are not based on retrospective performance maximization, parameter fitting, or curve-fitting procedures. This choice is intended to preserve conceptual validity and reduce dependence on historical over-adaptation.
+        </p>
+      </div>
+      
+      <div class="reveal reveal-delay-4" style="margin-bottom: var(--space-lg);">
+        <h3 style="margin-bottom: var(--space-sm); color: var(--color-accent); font-size: 1.2rem;">Critique of Indicator-Based Methodologies</h3>
+        <p>
+          The research includes a methodological critique of conventional indicator-based approaches, particularly where market interpretation depends on oscillators, moving averages, smoothing techniques, or derived signals. The objective is to distinguish direct structural analysis of price data from secondary interpretations produced by technical overlays.
+        </p>
+      </div>
+      
+      <div class="reveal reveal-delay-5">
+        <h3 style="margin-bottom: var(--space-sm); color: var(--color-accent); font-size: 1.2rem;">Alternative Frameworks for Market Interpretation</h3>
+        <p>
+          The research aims to construct alternative interpretative frameworks grounded in mathematical consistency, statistical coherence, and reproducibility. These frameworks are designed to support market analysis and strategy development, without providing trading signals or investment recommendations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ THEORETICAL CONTRIBUTION I ═══ -->
+  <section class="section contributions bg-primary" id="contribution-1">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Framework I</span>
+        <h2 class="section-title">Time Horizons in Financial Market Analysis</h2>
+      </div>
+      <div class="contributions__highlight reveal">
+        <p>
+          The first framework concerns the role of time horizons in the analysis of financial markets. It examines how different temporal structures influence the interpretation of price dynamics, market behavior, and the development of analytical models for financial instruments.
+        </p>
+        <p style="margin-top: var(--space-md);">
+          The framework is based on the idea that market dynamics cannot be interpreted independently of the temporal structure through which they are observed. Different time horizons may reveal different structural properties, statistical behaviors, and analytical conditions.
+        </p>
+        <p style="margin-top: var(--space-md);">
+          This contribution is connected to the broader objective of developing market analysis models that are coherent, reproducible, and independent of conventional technical indicators.
+        </p>
+        
+        <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--color-border-accent);">
+          <p style="margin-bottom: var(--space-sm);"><strong>Scope:</strong> Analysis of time horizons and temporal structures in financial market dynamics.</p>
+          <p><strong>Methodological Relevance:</strong> The framework supports a more structured interpretation of price behavior by placing temporal organization at the center of market analysis.</p>
         </div>
-        <div class="direction-item reveal reveal-delay-2">
-          <span class="direction-item__marker"></span>
-          <span class="direction-item__text">The statistical characterization of non-random components in financial time series</span>
-        </div>
-        <div class="direction-item reveal reveal-delay-3">
-          <span class="direction-item__marker"></span>
-          <span class="direction-item__text">The development of non-optimized analytical models</span>
-        </div>
-        <div class="direction-item reveal reveal-delay-4">
-          <span class="direction-item__marker"></span>
-          <span class="direction-item__text">The formal critique of indicator-based methodologies</span>
-        </div>
-        <div class="direction-item reveal reveal-delay-5">
-          <span class="direction-item__marker"></span>
-          <span class="direction-item__text">The construction of alternative interpretative frameworks grounded in mathematical consistency</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ THEORETICAL CONTRIBUTION II ═══ -->
+  <section class="section contributions bg-secondary" id="contribution-2">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Framework II</span>
+        <h2 class="section-title">A New Type of Stop Loss</h2>
+      </div>
+      <div class="contributions__highlight reveal">
+        <p>
+          The second framework concerns the development of a new type of stop loss within a mathematical and statistical approach to financial market strategies.
+        </p>
+        <p style="margin-top: var(--space-md);">
+          The study explores an alternative way to define risk-control logic and position management, moving beyond purely mechanical or conventional stop-loss criteria. The framework is not intended as a trading signal or as a recommendation to buy or sell financial instruments.
+        </p>
+        <p style="margin-top: var(--space-md);">
+          Its purpose is to contribute to the construction of analytical structures for strategy development, risk control, and market interpretation. The approach is connected to the broader methodology based on statistical coherence, reproducibility, and independence from conventional technical indicators.
+        </p>
+        
+        <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--color-border-accent);">
+          <p style="margin-bottom: var(--space-sm);"><strong>Scope:</strong> Development of an alternative stop-loss logic within a mathematical-statistical framework applied to financial market strategies.</p>
+          <p><strong>Methodological Relevance:</strong> The framework supports the study of risk-control structures as part of a broader analytical and strategic model.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══ CORE PRINCIPLES ═══ -->
-  <section class="section principles-section" id="principles">
+  <section class="section approach bg-primary" id="core-principles">
     <div class="container">
       <div class="reveal">
-        <h2 class="section-title">Core Principles</h2>
-        <p class="section-subtitle">All theoretical developments are grounded in the following principles:</p>
+        <h2 class="section-title">Core Research Principles</h2>
+        <p class="section-subtitle" style="margin-bottom: var(--space-xl);">All research developments are grounded in methodological principles designed to preserve rigor, coherence, and reproducibility.</p>
       </div>
-
-      <div style="margin-top: var(--space-2xl);">
-        <div class="principle-card reveal reveal-delay-1">
-          <div class="principle-card__header">
-            <h3 class="principle-card__title"><span class="principle-card__dash">—</span> Non-optimization</h3>
-          </div>
-          <p class="principle-card__text">
-            Models are not derived through parameter fitting or retrospective performance maximization.
-          </p>
+      <div class="principles-grid">
+        <div class="principle reveal reveal-delay-1">
+          <span class="principle__icon">∫</span>
+          <div class="principle__line"></div>
+          <p class="principle__desc"><strong>Mathematical Structure</strong><br><span style="font-size: 0.85em; opacity: 0.7; margin-top: 0.5rem; display: block; line-height: 1.5; font-weight: normal;">The research is based on mathematical relationships and structural properties of price sequences.</span></p>
         </div>
-
-        <div class="principle-card reveal reveal-delay-2">
-          <div class="principle-card__header">
-            <h3 class="principle-card__title"><span class="principle-card__dash">—</span> Indicator Independence</h3>
-          </div>
-          <p class="principle-card__text">
-            No reliance on derived indicators, oscillators, or transformed price signals.
-          </p>
+        <div class="principle reveal reveal-delay-2">
+          <span class="principle__icon">σ</span>
+          <div class="principle__line"></div>
+          <p class="principle__desc"><strong>Statistical Coherence</strong><br><span style="font-size: 0.85em; opacity: 0.7; margin-top: 0.5rem; display: block; line-height: 1.5; font-weight: normal;">Models and frameworks must preserve internal statistical consistency and remain interpretable under comparable conditions.</span></p>
         </div>
-
-        <div class="principle-card reveal reveal-delay-3">
-          <div class="principle-card__header">
-            <h3 class="principle-card__title"><span class="principle-card__dash">—</span> Structural Analysis</h3>
-          </div>
-          <p class="principle-card__text">
-            Focus on intrinsic properties of price sequences rather than external overlays.
-          </p>
+        <div class="principle reveal reveal-delay-3">
+          <span class="principle__icon">⊘</span>
+          <div class="principle__line"></div>
+          <p class="principle__desc"><strong>No Retrospective Optimization</strong><br><span style="font-size: 0.85em; opacity: 0.7; margin-top: 0.5rem; display: block; line-height: 1.5; font-weight: normal;">The research avoids models built exclusively on past performance, parameter adaptation, or curve fitting.</span></p>
         </div>
-
-        <div class="principle-card reveal reveal-delay-4">
-          <div class="principle-card__header">
-            <h3 class="principle-card__title"><span class="principle-card__dash">—</span> Statistical Coherence</h3>
-          </div>
-          <p class="principle-card__text">
-            All frameworks are required to maintain internal statistical consistency.
-          </p>
+        <div class="principle reveal reveal-delay-4">
+          <span class="principle__icon">∅</span>
+          <div class="principle__line"></div>
+          <p class="principle__desc"><strong>Independence from Indicators</strong><br><span style="font-size: 0.85em; opacity: 0.7; margin-top: 0.5rem; display: block; line-height: 1.5; font-weight: normal;">The work does not rely on conventional technical indicators, oscillators, moving averages, or derived signals as primary analytical tools.</span></p>
         </div>
-
-        <div class="principle-card reveal reveal-delay-5">
-          <div class="principle-card__header">
-            <h3 class="principle-card__title"><span class="principle-card__dash">—</span> Reproducibility</h3>
-          </div>
+        <div class="principle reveal reveal-delay-5">
+          <span class="principle__icon">≡</span>
+          <div class="principle__line"></div>
+          <p class="principle__desc"><strong>Reproducibility</strong><br><span style="font-size: 0.85em; opacity: 0.7; margin-top: 0.5rem; display: block; line-height: 1.5; font-weight: normal;">Analytical structures must be interpretable and verifiable under comparable conditions, without requiring continuous adaptive recalibration.</span></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ THEORETICAL CONTRIBUTIONS ═══ -->
-  <section class="section" id="theories">
-    <div class="container">
+  <!-- ═══ ADDITIONAL DEVELOPMENTS ═══ -->
+  <section class="section bg-secondary" id="additional-developments">
+    <div class="container container--narrow">
       <div class="reveal">
-        <h2 class="section-title">Theoretical Contributions</h2>
-      </div>
-
-      <!-- Theory I -->
-      <div class="theory-block reveal">
-        <span class="theory-block__label">Theory I</span>
-        <h3 class="theory-block__title">[Title of the First Theory]</h3>
-        <p class="theory-block__text">
-          This framework introduces a structural interpretation of price dynamics based on mathematical
-          relations independent of conventional technical constructs.
-          The model focuses on identifying consistent patterns emerging from the internal configuration of
-          price data, without the use of smoothing, filtering, or signal transformation.
+        <h2 class="section-title">Additional Developments</h2>
+        <p style="margin-bottom: var(--space-xl);">
+          Further research developments are oriented toward refining and extending the analytical frameworks described above.
         </p>
-
       </div>
-
-      <!-- Theory II -->
-      <div class="theory-block reveal">
-        <span class="theory-block__label">Theory II</span>
-        <h3 class="theory-block__title">[Title of the Second Theory]</h3>
-        <p class="theory-block__text">
-          This work extends the initial framework by incorporating statistical constraints aimed at formalizing
-          the boundaries of interpretability in financial time series.
-          The theory provides a structured critique of commonly used analytical tools and proposes an
-          alternative model grounded in probabilistic consistency.
+      
+      <div class="reveal reveal-delay-1" style="margin-bottom: var(--space-lg);">
+        <h3 style="margin-bottom: var(--space-sm); color: var(--color-accent); font-size: 1.2rem;">Multi-Scale Structural Analysis</h3>
+        <p>
+          Extension of structural models across different analytical and temporal scales, with the objective of evaluating whether the same methodological principles can remain valid across different market conditions.
         </p>
-
+      </div>
+      
+      <div class="reveal reveal-delay-2" style="margin-bottom: var(--space-lg);">
+        <h3 style="margin-bottom: var(--space-sm); color: var(--color-accent); font-size: 1.2rem;">Market Regimes Without Classification Bias</h3>
+        <p>
+          Formalization of market regimes without relying on retrospective classification, adaptive labels, or discretionary categorization.
+        </p>
+      </div>
+      
+      <div class="reveal reveal-delay-3" style="margin-bottom: var(--space-lg);">
+        <h3 style="margin-bottom: var(--space-sm); color: var(--color-accent); font-size: 1.2rem;">Statistical Constraints in Dynamic Frameworks</h3>
+        <p>
+          Integration of statistical constraints into dynamic analytical frameworks, in order to define clearer boundaries between meaningful structure, variability, and random market behavior.
+        </p>
+      </div>
+      
+      <div class="reveal reveal-delay-4">
+        <h3 style="margin-bottom: var(--space-sm); color: var(--color-accent); font-size: 1.2rem;">Reproducibility Criteria</h3>
+        <p>
+          Refinement of criteria used to evaluate whether a framework maintains analytical validity under comparable conditions without continuous recalibration.
+        </p>
       </div>
     </div>
   </section>
 
+  <!-- ═══ RELATION TO PROFESSIONAL PRACTICE ═══ -->
+  <section class="section bg-primary" id="professional-practice">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <h2 class="section-title">Connection with Professional Market Expertise</h2>
+        <p style="margin-bottom: var(--space-md);">
+          The research frameworks are connected to professional experience in financial markets, trading, operational management, technical and fundamental analysis, programming, trading platforms, and execution processes.
+        </p>
+        <p style="margin-bottom: var(--space-md);">
+          This professional foundation allows the research to remain connected to real market problems while maintaining a rigorous methodological orientation.
+        </p>
+        <p>
+          The value of the research lies in the integration between market expertise and the development of mathematical-statistical structures for analysis, interpretation, and strategy construction.
+        </p>
+      </div>
+    </div>
+  </section>
 
+  <!-- ═══ ACADEMIC USE ═══ -->
+  <section class="section bg-secondary" id="academic-use">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <h2 class="section-title">Consideration in Master-Level University Contexts</h2>
+        <p style="margin-bottom: var(--space-md);">
+          Two studies derived from this research activity were considered within master-level university contexts.
+        </p>
+        <ul style="list-style-type: disc; margin-left: 1.5rem; margin-bottom: var(--space-md); opacity: 0.8; line-height: 1.8;">
+          <li>One study concerns time horizons in the analysis of financial markets.</li>
+          <li>The other concerns a new type of stop loss developed within a mathematical-statistical model applied to market strategies.</li>
+        </ul>
+        <p>
+          These references are presented as evidence of the methodological interest generated by specific aspects of the research, without constituting the central identity of the professional profile.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ RESEARCH POSITIONING ═══ -->
+  <section class="section bg-primary" id="research-positioning">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <h2 class="section-title">Research Positioning</h2>
+        <p style="margin-bottom: var(--space-md);">
+          The research differs from conventional approaches based on indicator systems, optimized parameters, or performance-driven models.
+        </p>
+        <p style="margin-bottom: var(--space-md);">
+          Rather than seeking predictive shortcuts or automatic signals, the work focuses on structural validity, mathematical rigor, statistical coherence, and reproducibility.
+        </p>
+        <p style="margin-bottom: var(--space-md);">
+          The research should be understood as a methodological contribution to financial market analysis and strategy framework development.
+        </p>
+        <p>
+          Its value lies in the construction of analytical models capable of connecting market expertise, quantitative reasoning, and operational relevance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CLOSING ═══ -->
+  <section class="section section--compact contact-cta bg-secondary" id="closing">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <h2 class="section-title">Research as a Methodological Foundation</h2>
+        <p style="margin-bottom: var(--space-md); font-size: 1.1rem; line-height: 1.6;">
+          The research activity provides the methodological foundation for the broader work on financial market analysis, strategic structures, and applications to financial instruments.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.6;">
+          Its purpose is to develop coherent analytical frameworks capable of supporting the interpretation of financial market dynamics through mathematics, statistics, and professional market expertise.
+        </p>
+      </div>
+      <div class="contact-cta__links reveal" style="margin-top: var(--space-2xl);">
+        <a href="/applications.html" class="contact-cta__item">
+          <span>→</span> View Applications
+        </a>
+        <a href="/academic-use.html" class="contact-cta__item">
+          <span>→</span> Learn about Academic Use
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
@@ -199,15 +335,17 @@
         </div>
         <div class="footer__links">
           <a href="/" class="footer__link">Home</a>
+          <a href="/method.html" class="footer__link">Method</a>
           <a href="/research.html" class="footer__link">Research</a>
-          <a href="/publications.html" class="footer__link">Publications</a>
+          <a href="/applications.html" class="footer__link">Applications</a>
+          <a href="/academic-use.html" class="footer__link">Academic Use</a>
           <a href="/contact.html" class="footer__link">Contact</a>
         </div>
       </div>
       <div class="footer__bottom">
         <span class="footer__copyright">© 2026 — All rights reserved</span>
         <span class="footer__disclaimer">
-          This website and its contents are intended exclusively for research and educational purposes and do not constitute financial advice.
+          The content of this website is intended exclusively for research, analytical, and educational purposes. It does not constitute financial advice, investment advice, trading signals, portfolio management guidance, solicitation to invest, or recommendations to buy or sell financial instruments.
         </span>
       </div>
     </div>
