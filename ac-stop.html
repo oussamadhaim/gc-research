@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AC STOP — A Dynamic Daily Risk Management Framework for Financial Markets by Graziano Campagna. Published Waseda University, 2011.">
+  <title>AC STOP: A Dynamic Daily Risk Management Framework for Financial Markets</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/main.css">
+  <style>
+    /* Academic preprint styling extensions */
+    .paper {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-3xl);
+      margin-top: var(--space-xl);
+      box-shadow: var(--shadow-lg);
+    }
+    .paper-header {
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: var(--space-xl);
+      margin-bottom: var(--space-2xl);
+    }
+    .paper-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      line-height: 1.3;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-md);
+    }
+    .paper-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-xl);
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+    .paper-meta strong {
+      color: var(--color-accent);
+    }
+    .paper-abstract {
+      background: rgba(255, 255, 255, 0.01);
+      border-left: 2px solid var(--color-accent);
+      padding: var(--space-lg) var(--space-xl);
+      margin: var(--space-2xl) 0;
+      font-style: italic;
+    }
+    .paper-section-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      margin: var(--space-2xl) 0 var(--space-md);
+      color: var(--color-text-primary);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: var(--space-xs);
+    }
+    .paper p {
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: var(--space-lg);
+      text-align: justify;
+    }
+    .paper ul, .paper ol {
+      margin-bottom: var(--space-lg);
+      padding-left: var(--space-xl);
+    }
+    .paper li {
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-sm);
+      line-height: 1.75;
+    }
+    .paper-references {
+      margin-top: var(--space-3xl);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--color-border);
+    }
+    .paper-references h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      margin-bottom: var(--space-lg);
+      color: var(--color-text-primary);
+    }
+    .reference-item {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-md);
+      line-height: 1.6;
+    }
+    .back-btn-container {
+      margin-bottom: var(--space-xl);
+    }
+    @media (max-width: 768px) {
+      .paper {
+        padding: var(--space-xl);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo">
+        Graziano Campagna
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="/" class="navbar__link">Home</a>
+        <a href="/method.html" class="navbar__link">Method</a>
+        <a href="/research.html" class="navbar__link">Research</a>
+        <a href="/applications.html" class="navbar__link">Applications</a>
+        <a href="/insights.html" class="navbar__link">Insights</a>
+        <a href="/academic-use.html" class="navbar__link">Academic Use</a>
+        <a href="/contact.html" class="navbar__link">Contact</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero hero--small" id="hero">
+    <div class="hero__bg" style="background-image: none;"></div>
+    <canvas class="hero__canvas"></canvas>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="back-btn-container">
+        <a href="/academic-use.html" class="btn btn--text">
+          <span class="arrow">←</span> Back to Academic Use
+        </a>
+      </div>
+      <h1 class="hero__title">AC STOP Study</h1>
+    </div>
+  </section>
+
+  <!-- ═══ MAIN PAPER CONTENT ═══ -->
+  <section class="section bg-primary" style="padding-top: 0;">
+    <div class="container container--narrow">
+      
+      <div class="paper reveal">
+        
+        <!-- Paper Header -->
+        <div class="paper-header">
+          <h2 class="paper-title">AC STOP — A Dynamic Daily Risk Management Framework for Financial Markets</h2>
+          <div class="paper-meta">
+            <span>Author: <strong>Graziano Campagna</strong> (Independent Researcher)</span>
+            <span>Date: <strong>2011</strong></span>
+            <span>University: <strong>Waseda University, Tokyo</strong></span>
+          </div>
+        </div>
+
+        <!-- Abstract -->
+        <div class="paper-abstract">
+          <p style="margin-bottom: 0;">
+            <strong>Abstract</strong> — The AC STOP framework, originally developed by Graziano Campagna in the early 2000s, represents one of the most innovative and structurally advanced daily stop-loss methodologies designed for predefined application across a broad spectrum of tradable financial instruments.
+          </p>
+        </div>
+
+        <!-- Theoretical Foundation -->
+        <h3 class="paper-section-title">Theoretical Foundation</h3>
+        <p>
+          The framework is based on the assumption that financial markets do not evolve randomly, but rather according to recurring structural configurations influenced by temporal relationships, volatility acceleration dynamics, momentum transitions, and behavioral interaction among financial operators.
+        </p>
+
+        <!-- Methodological Characteristics -->
+        <h3 class="paper-section-title">Methodological Characteristics</h3>
+        <p>
+          One of the primary methodological strengths of AC STOP is its universal applicability across multiple asset classes while maintaining operational consistency and reducing discretionary decision-making.
+        </p>
+
+        <!-- Operational Structure -->
+        <h3 class="paper-section-title">Operational Structure</h3>
+        <p>
+          On a daily basis, the framework identifies the technical threshold beyond which the market demonstrates structural deterioration of the prevailing trend. The model also introduces STOP & REVERSE characteristics within the analytical process.
+        </p>
+
+        <!-- Empirical Validation -->
+        <h3 class="paper-section-title">Empirical Validation</h3>
+        <p>
+          Backtesting procedures applied to international equity markets, futures indices, Forex markets, and commodities demonstrated significant improvements in risk-adjusted performance after integration of AC STOP into systematic and discretionary strategies.
+        </p>
+
+        <!-- Drawdown Reduction -->
+        <h3 class="paper-section-title">Drawdown Reduction</h3>
+        <p>
+          Empirical evidence indicated that all analyzed strategies benefited from reduced drawdown exposure, improving capital efficiency and operational sustainability.
+        </p>
+
+        <!-- Performance Under High Volatility Conditions -->
+        <h3 class="paper-section-title">Performance Under High Volatility Conditions</h3>
+        <p>
+          The framework demonstrated adaptability during periods of severe financial stress, including the 2008 subprime crisis and the March 2020 pandemic collapse.
+        </p>
+
+        <!-- Applications -->
+        <h3 class="paper-section-title">Applications</h3>
+        <p>
+          The methodological structure of AC STOP is suitable for algorithmic trading systems, quantitative trading models, portfolio management, and dynamic asset allocation frameworks.
+        </p>
+
+        <!-- Conclusion -->
+        <h3 class="paper-section-title">Conclusion</h3>
+        <p>
+          AC STOP represents a strategic contribution within modern financial market analysis and quantitative research, combining technical analysis, temporal dynamics, and quantitative risk management methodologies.
+        </p>
+
+        <!-- Academic References / Institutional -->
+        <div class="paper-references">
+          <h3>Institutional & Academic Reference</h3>
+          <div class="reference-item">
+            Waseda University, Tokyo, Graduate School / Academic Framework of the Master’s Program in Technical Analysis Applied to Financial Markets.
+          </div>
+          <div class="reference-item">
+            Institutional Link: <a href="https://www.waseda.jp/top/en/" target="_blank" rel="noopener" style="color: var(--color-accent); text-decoration: underline;">Waseda University Official Website</a>
+          </div>
+          <div class="reference-item">
+            <strong>Keywords:</strong> Financial Markets, Risk Management, Stop Loss Framework, Quantitative Analysis, Market Structure, Temporal Dynamics, Drawdown Reduction, Algorithmic Trading
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ DISCLAIMER ═══ -->
+  <section class="section bg-secondary" style="padding: var(--space-xl) 0;">
+    <div class="container container--narrow">
+      <div class="note-block" style="margin-top: 0;">
+        <div class="note-block__title">Academic Disclaimer</div>
+        <p class="note-block__text" style="font-size: 0.8rem;">
+          This material is intended exclusively for research and educational purposes. It does not constitute financial advice, investment recommendation, or solicitation of financial activity.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__logo">Graziano Campagna</div>
+          <p class="footer__text">
+            Mathematical and Statistical Analysis of Financial Markets.
+            Independent Quantitative Research.
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="/" class="footer__link">Home</a>
+          <a href="/method.html" class="footer__link">Method</a>
+          <a href="/research.html" class="footer__link">Research</a>
+          <a href="/applications.html" class="footer__link">Applications</a>
+          <a href="/insights.html" class="footer__link">Insights</a>
+          <a href="/academic-use.html" class="footer__link">Academic Use</a>
+          <a href="/contact.html" class="footer__link">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">© 2026 — All rights reserved</span>
+        <span class="footer__disclaimer">
+          The content of this website is intended exclusively for research, analytical, and educational purposes. It does not constitute financial advice, investment advice, trading signals, portfolio management guidance, solicitation to invest, or recommendations to buy or sell financial instruments.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/hero-canvas.js"></script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

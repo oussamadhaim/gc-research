@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Theory of Temporal Arcs by Graziano Campagna. Published by the Shanghai Advanced Institute of Finance, 2010.">
+  <title>Theory of Temporal Arcs — Quantitative Research Paper</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/main.css">
+  <style>
+    /* Academic preprint styling extensions */
+    .paper {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-3xl);
+      margin-top: var(--space-xl);
+      box-shadow: var(--shadow-lg);
+    }
+    .paper-header {
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: var(--space-xl);
+      margin-bottom: var(--space-2xl);
+    }
+    .paper-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      line-height: 1.3;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-md);
+    }
+    .paper-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-xl);
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+    .paper-meta strong {
+      color: var(--color-accent);
+    }
+    .paper-abstract {
+      background: rgba(255, 255, 255, 0.01);
+      border-left: 2px solid var(--color-accent);
+      padding: var(--space-lg) var(--space-xl);
+      margin: var(--space-2xl) 0;
+      font-style: italic;
+    }
+    .paper-section-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      margin: var(--space-2xl) 0 var(--space-md);
+      color: var(--color-text-primary);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: var(--space-xs);
+    }
+    .paper p {
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: var(--space-lg);
+      text-align: justify;
+    }
+    .paper ul, .paper ol {
+      margin-bottom: var(--space-lg);
+      padding-left: var(--space-xl);
+    }
+    .paper li {
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-sm);
+      line-height: 1.75;
+    }
+    .paper-references {
+      margin-top: var(--space-3xl);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--color-border);
+    }
+    .paper-references h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      margin-bottom: var(--space-lg);
+      color: var(--color-text-primary);
+    }
+    .reference-item {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-md);
+      line-height: 1.6;
+    }
+    .back-btn-container {
+      margin-bottom: var(--space-xl);
+    }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      margin: var(--space-xl) 0;
+    }
+    @media (max-width: 768px) {
+      .paper {
+        padding: var(--space-xl);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo">
+        Graziano Campagna
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="/" class="navbar__link">Home</a>
+        <a href="/method.html" class="navbar__link">Method</a>
+        <a href="/research.html" class="navbar__link">Research</a>
+        <a href="/applications.html" class="navbar__link">Applications</a>
+        <a href="/insights.html" class="navbar__link">Insights</a>
+        <a href="/academic-use.html" class="navbar__link">Academic Use</a>
+        <a href="/contact.html" class="navbar__link">Contact</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero hero--small" id="hero">
+    <div class="hero__bg" style="background-image: none;"></div>
+    <canvas class="hero__canvas"></canvas>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="back-btn-container">
+        <a href="/academic-use.html" class="btn btn--text">
+          <span class="arrow">←</span> Back to Academic Use
+        </a>
+      </div>
+      <h1 class="hero__title">Theory of Temporal Arcs</h1>
+    </div>
+  </section>
+
+  <!-- ═══ MAIN PAPER CONTENT ═══ -->
+  <section class="section bg-primary" style="padding-top: 0;">
+    <div class="container container--narrow">
+      
+      <div class="paper reveal">
+        
+        <!-- Paper Header -->
+        <div class="paper-header">
+          <h2 class="paper-title">Theory of Temporal Arcs</h2>
+          <div class="paper-meta">
+            <span>Author: <strong>Graziano Campagna</strong> (Independent Researcher)</span>
+            <span>Date: <strong>2010</strong></span>
+            <span>Institution: <strong>Shanghai Advanced Institute of Finance</strong></span>
+          </div>
+        </div>
+
+        <!-- Abstract -->
+        <div class="paper-abstract">
+          <p style="margin-bottom: 0;">
+            <strong>Abstract</strong> — The Theory of Temporal Arcs was developed through the mathematical and statistical analysis of financial market structures, with particular focus on order book dynamics and volume interactions within futures markets. The research originated in 1997 from the observation of numerical relationships generated by trading volumes across the first three levels of the DAX futures order book, combined with minute-by-minute executed contract sequences. The resulting structures enabled the definition of a real-time trend algorithm capable of identifying directional market behavior over short temporal intervals. Subsequent development extended the framework to broader temporal structures including daily, weekly, monthly, and annual intervals through the use of iterative processes, continuous series analysis, and statistical filtering methodologies. Further validation procedures demonstrated substantial independence from conventional historical series structures and from external variability components.
+          </p>
+        </div>
+
+        <!-- Research Overview -->
+        <h3 class="paper-section-title">Research Overview</h3>
+        <p>
+          In 1997, Graziano Campagna identified a series of numerical relationships within the market depth analysis of the DAX future. These relationships emerged from interactions between:
+        </p>
+        <ul>
+          <li>volumes recorded on the first three levels of the order book,</li>
+          <li>and the sequence of executed contracts measured on a minute-by-minute basis.</li>
+        </ul>
+        <p>
+          The resulting mathematical structures allowed the construction of a real-time directional framework capable of defining market tendencies over short-term intervals.
+        </p>
+        <p>
+          The study was subsequently extended through:
+        </p>
+        <ul>
+          <li>double iterative processes,</li>
+          <li>continuous numerical series,</li>
+          <li>filtering and normalization procedures.</li>
+        </ul>
+        <p>
+          This development enabled the extension of the analytical framework from intraday structures to daily, weekly, monthly, and annual temporal structures. The theory was later tested and validated across additional global markets including:
+        </p>
+        <ul>
+          <li>S&P 500 Index and Futures</li>
+          <li>Dow Jones Index and Futures</li>
+          <li>NASDAQ 100 Index and Futures</li>
+          <li>EUR/USD Foreign Exchange Market</li>
+        </ul>
+        <p>
+          The observed consistency across these markets contributed to the consolidation of the Theory of Temporal Arcs as an alternative framework for quantitative market analysis.
+        </p>
+
+        <!-- Methodological Principles -->
+        <h3 class="paper-section-title">Methodological Principles</h3>
+        <p>
+          The framework is built on rigorous non-discretionary pillars designed to maintain quantitative consistency:
+        </p>
+        <ul>
+          <li><strong>Absence of retrospective optimization</strong>: Eliminates curve-fitting biases.</li>
+          <li><strong>Independence from technical indicators</strong>: Bypasses standard oscillators, moving averages, and derived indicators.</li>
+          <li><strong>Structural interpretation of market data</strong>: Focuses directly on raw order book and transaction sequences.</li>
+          <li><strong>Statistical consistency of analytical models</strong>: Protects against spurious correlations.</li>
+          <li><strong>Reproducibility of observed results</strong>: Guarantees equivalent output under identical market conditions.</li>
+        </ul>
+
+        <!-- Statistical and Structural Validation -->
+        <h3 class="paper-section-title">Statistical and Structural Validation</h3>
+        <p>
+          The theoretical framework was subjected to multiple validation procedures involving:
+        </p>
+        <ul>
+          <li>comparison with historical series studies,</li>
+          <li>evaluation of variability components,</li>
+          <li>analysis of market participant behavior,</li>
+          <li>geographical distribution of trading activity,</li>
+          <li>temporal concentration of execution flows,</li>
+          <li>and volume attribution analysis.</li>
+        </ul>
+        <p>
+          The results suggested that the observed structures were not attributable to random configurations but rather to persistent behavioral mechanisms underlying financial market activity.
+        </p>
+
+        <!-- Technological Infrastructure -->
+        <h3 class="paper-section-title">Technological Infrastructure</h3>
+        <p>
+          The research utilized a dedicated filtering and calculation system connected in real time to the reference market. This infrastructure enabled continuous acquisition and processing of order book and execution data under live market conditions.
+        </p>
+
+        <!-- Current Relevance -->
+        <h3 class="paper-section-title">Current Relevance</h3>
+        <p>
+          Today, the Theory of Temporal Arcs represents an established contribution within the broader field of quantitative financial market analysis and alternative analytical methodologies. The framework continues to serve as the basis for ongoing independent research in mathematical market structures, non-optimized analytical models, and statistical interpretation of financial dynamics.
+        </p>
+
+        <!-- PDF & Citation -->
+        <div class="paper-references">
+          <h3>References & Citation</h3>
+          <div class="reference-item">
+            <strong>Citation:</strong> G C. (2010). <em>Theory of Temporal Arcs.</em> Shanghai Advanced Institute of Finance.
+          </div>
+          <div class="reference-item">
+            <strong>Institutional Reference:</strong> Available within the academic framework of the Shanghai Advanced Institute of Finance.
+          </div>
+          
+          <div class="btn-group">
+            <a href="mailto:contact@grazianocampagna.com?subject=Request%20PDF:%20Theory%20of%20Temporal%20Arcs" class="btn btn--outline" style="padding: var(--space-xs) var(--space-md); font-size: 0.8rem;">
+              Download Full Paper (PDF)
+            </a>
+          </div>
+          
+          <div class="reference-item">
+            <strong>Keywords:</strong> Financial Markets, Quantitative Analysis, Market Structure, Order Book Dynamics, Statistical Modeling, Non-Optimized Frameworks, Temporal Structures, Indicator-Free Analysis
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ DISCLAIMER ═══ -->
+  <section class="section bg-secondary" style="padding: var(--space-xl) 0;">
+    <div class="container container--narrow">
+      <div class="note-block" style="margin-top: 0;">
+        <div class="note-block__title">Academic Disclaimer</div>
+        <p class="note-block__text" style="font-size: 0.8rem;">
+          This material is intended exclusively for research and educational purposes. It does not constitute financial advice, investment recommendation, or solicitation of financial activity.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__logo">Graziano Campagna</div>
+          <p class="footer__text">
+            Mathematical and Statistical Analysis of Financial Markets.
+            Independent Quantitative Research.
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="/" class="footer__link">Home</a>
+          <a href="/method.html" class="footer__link">Method</a>
+          <a href="/research.html" class="footer__link">Research</a>
+          <a href="/applications.html" class="footer__link">Applications</a>
+          <a href="/insights.html" class="footer__link">Insights</a>
+          <a href="/academic-use.html" class="footer__link">Academic Use</a>
+          <a href="/contact.html" class="footer__link">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">© 2026 — All rights reserved</span>
+        <span class="footer__disclaimer">
+          The content of this website is intended exclusively for research, analytical, and educational purposes. It does not constitute financial advice, investment advice, trading signals, portfolio management guidance, solicitation to invest, or recommendations to buy or sell financial instruments.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/hero-canvas.js"></script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
